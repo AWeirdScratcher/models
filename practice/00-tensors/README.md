@@ -6,7 +6,7 @@
 
 Tensors are one of the core building blocks of Pytorch, and here are a few types of them:
 
-**Scalar**: Basically a single number, and in "tensor-speak," it's a *zero dimension* tensor.
+**Scalar**: A single number, and in "tensor-speak," it's a *zero dimension* tensor.
 - Dimensions: `0`
 - Example usage: `a`
 
@@ -47,6 +47,8 @@ vector, vector.ndim, vector.shape
 <br />
 
 **Matrix**: Has two dimensions (can contain "sub-list," in the concept of Python).
+- Dimensions: 2
+- Example: `Q`
 
 `In [3]:`
 ```python
@@ -62,11 +64,13 @@ MATRIX.shape
 torch.Size([2, 3])
 ```
 
-> This implices that the first dimension has two items (sub-lists), and the second dimension has three elements (numbers).
+> This implies that the first dimension has two items (sub-lists), and the second dimension has three elements (numbers).
 
 <br />
 
-**Tensor**: Has three dimensions.
+**Tensor**: An n-dimensional array of numbers.
+- Dimensions: `n`
+- Example usage: `X`
 
 `In [4]:`
 ```python
@@ -84,6 +88,5 @@ TENSOR.shape
 torch.Size([1, 2, 4])
 ```
 
-> This implies: for the first dimension, there is only one item; for the second dimension, there are two items; for the third dimension, there are four numbers.
-
+> This implies: that for the first dimension, there is only one item; for the second dimension, there are two items; for the third dimension, there are four numbers.
 
