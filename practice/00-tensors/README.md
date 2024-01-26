@@ -207,3 +207,6 @@ tensor([[0.7755, 0.7278, 0.6414],
         [0.5252, 0.4137, 0.5907],
         [0.5338, 0.2536, 0.3880]], dtype=torch.float64)
 ```
+
+## Getting Information from Tensors
+
