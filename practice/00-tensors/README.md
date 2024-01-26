@@ -1,10 +1,14 @@
-# 0. Tensors
+# 00. Tensors
 
 🍔 [Learn Pytorch](https://www.learnpytorch.io/00_pytorch_fundamentals/)
+
+## Basics
 
 Tensors are one of the core building blocks of Pytorch, and here are a few types of them:
 
 **Scalar**: Basically a single number, and in "tensor-speak," it's a *zero dimension* tensor.
+- Dimensions: `0`
+- Example usage: `a`
 
 `In [1]:`
 ```python
@@ -22,16 +26,64 @@ scalar, scalar.ndim
 <br />
 
 **Vector**: A single-dimensional tensor that can contain many numbers.
+- Dimensions: `1`
+- Example usage: `y`
 
 `In [2]:`
 ```python
 vector = torch.tensor([6, 9, 4, 2, 0])
-vector, vector.ndim
+vector, vector.ndim, vector.shape
 ```
 
 `Out[2]:`
 ```python
-(tensor([6, 9, 4, 2, 0]), 1)
+(tensor([6, 9, 4, 2, 0]),
+ 1,
+ torch.Size([5]))
 ```
 
 > **Counting Dimensions**: Count the open square brackets at the beginning of a tensor.
+
+<br />
+
+**Matrix**: Has two dimensions (can contain "sub-list," in the concept of Python).
+
+`In [3]:`
+```python
+MATRIX = torch.tensor([
+  [6, 9, 4],
+  [2, 0, 6]
+])
+MATRIX.shape
+```
+
+`Out[3]:`
+```python
+torch.Size([2, 3])
+```
+
+> This implices that the first dimension has two items (sub-lists), and the second dimension has three elements (numbers).
+
+<br />
+
+**Tensor**: Has three dimensions.
+
+`In [4]:`
+```python
+TENSOR = torch.tensor([
+  [
+    [1, 9, 8, 9],
+    [0, 6, 0, 4]
+  ]
+])
+TENSOR.shape
+```
+
+`Out[4]:`
+```python
+torch.Size([1, 2, 4])
+```
+
+> This implies: for the first dimension, there is only one item; for the second dimension, there are two items; for the third dimension, there are four numbers.
+
+
