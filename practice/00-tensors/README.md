@@ -23,7 +23,7 @@ scalar, scalar.ndim
 (tensor(69), 0)
 ```
 
-<br />
+<br /><br />
 
 **Vector**: A single-dimensional tensor that can contain many numbers.
 - Dimensions: `1`
@@ -44,9 +44,9 @@ vector, vector.ndim, vector.shape
 
 > **Counting Dimensions**: Count the open square brackets at the beginning of a tensor.
 
-<br />
+<br /><br />
 
-**Matrix**: Has two dimensions (can contain "sub-list," in the concept of Python).
+**Matrix**: Has two dimensions (can contain "sub-lists," in the concept of Python).
 - Dimensions: 2
 - Example: `Q`
 
@@ -66,7 +66,7 @@ torch.Size([2, 3])
 
 > This implies that the first dimension has two items (sub-lists), and the second dimension has three elements (numbers).
 
-<br />
+<br /><br />
 
 **Tensor**: An n-dimensional array of numbers.
 - Dimensions: $`n`$
