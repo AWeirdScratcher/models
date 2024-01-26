@@ -142,3 +142,68 @@ tensor([[1., 1., 1., 1.],
         [1., 1., 1., 1.],
         [1., 1., 1., 1.]])
 ```
+
+### Zeros-like & Ones-like
+
+Sometimes you might want to create a tensor filled with zeros and ones based on the shape of another tensor.
+
+You can achieve this by using `torch.zeros_like(input)` or `torch.ones_like(input)`:
+
+`In [7]:`
+```python
+x = torch.rand(2, 2)
+zeros = torch.zeros_like(x)
+ones = torch.ones_like(x)
+
+print("x:", x)
+print("zeros:", zeros)
+print("ones:", ones)
+```
+
+`Out[7]:`
+```python
+x: tensor([[0.8950, 0.3771],
+           [0.4230, 0.2123]])
+zeros: tensor([[0., 0.],
+               [0., 0.]])
+ones: tensor([[1., 1.],
+              [1., 1.]])
+```
+
+## Range
+
+Use `torch.arange` to create a tensor of a range of numbers like 0 to 100.
+
+`In [8]:`
+```python
+range_ = torch.arange(start=0, end=10, step=1)
+range_
+```
+
+`Out[8]:`
+```python
+tensor([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+```
+
+## Tensor Datatypes
+
+The most common datatype in Pytorch (which is the default) is `torch.float32` (also known as `torch.float`). This is also referred to as "32-bit floating point."
+
+Additionally, there's also a 16-bit floating point (`torch.float16` aka. `torch.half`) and a 64-bit floating point (`torch.float64` aka. `torch.double`).
+
+The reason for using those different datatypes is to do with **precision** in computing, and "precision" is the amount of detail used to describe a number. The higher the value is, the more detail (and hence data) is used to describe a number. However, a higher precision value might lead to a slower performance; a lower precision value is indeed fast but might sacrifice the model's accuracy.
+
+Let's create a tensor with a specific datatype:
+
+`In [9]:`
+```python
+x = torch.rand(3, 3, dtype=torch.float64)
+x
+```
+
+`Out[9]:`
+```python
+tensor([[0.7755, 0.7278, 0.6414],
+        [0.5252, 0.4137, 0.5907],
+        [0.5338, 0.2536, 0.3880]], dtype=torch.float64)
+```
