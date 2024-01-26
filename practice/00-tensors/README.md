@@ -106,7 +106,7 @@ tensor([[0.6541, 0.4807, 0.2162, 0.6168],
         [0.2795, 0.6055, 0.4958, 0.5483]])
 ```
 
-### Random Tensors: Manual Seed
+### Manual Seed
 
 Make the result more reproducible with manual seeds:
 
