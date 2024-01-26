@@ -69,7 +69,7 @@ torch.Size([2, 3])
 <br />
 
 **Tensor**: An n-dimensional array of numbers.
-- Dimensions: `n`
+- Dimensions: $`n`$
 - Example usage: `X`
 
 `In [4]:`
@@ -89,4 +89,3 @@ torch.Size([1, 2, 4])
 ```
 
 > This implies: that for the first dimension, there is only one item; for the second dimension, there are two items; for the third dimension, there are four numbers.
-
