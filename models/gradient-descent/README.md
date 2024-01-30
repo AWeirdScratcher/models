@@ -1,6 +1,6 @@
 # Gradient Descent Model
 
-This simple gradient descent model is trained on a linear equation ($y=0.7x+0.3$). The model guesses the weight $m$ and bias $b$ during the training process.
+This simple gradient descent model is trained on a linear equation ($y=0.7x+0.3$) dataset. The model guesses the weight $m$ and bias $b$ during the training process.
 
 - [Safetensors](https://raw.githubusercontent.com/AWeirdScratcher/models/main/models/gradient-descent/gradient_descent_5k.safetensors) - 1KB
 - [PyTorch PT File](https://raw.githubusercontent.com/AWeirdScratcher/models/main/models/gradient-descent/gradient_descent_5k.bin) - 3KB
