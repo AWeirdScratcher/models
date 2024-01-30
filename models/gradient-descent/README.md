@@ -1,3 +1,5 @@
+<img alt="Ramptix Logo" src="https://img.shields.io/badge/%E2%AC%9C%20%EF%BC%8F%20AI-%23202020?style=for-the-badge" width="80" />
+
 # Gradient Descent Model
 
 This simple gradient descent model is trained on a linear equation ($y=0.7x+0.3$) dataset. The model guesses the weight $m$ and bias $b$ during the training process.
